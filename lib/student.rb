@@ -61,10 +61,10 @@ def update
  end
 
 def self.new_from_db(row)
-   new = self.new 
-new.id = row[0]
- new.name =  row[1]
- new.grade = row[2]
+   new = self.new(id, name, grade) 
+   new.id = row[0]
+   new.name =  row[1]
+   new.grade = row[2]
  new
 
 end
