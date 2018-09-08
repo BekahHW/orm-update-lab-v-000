@@ -63,7 +63,7 @@ def update
 
 def self.new_from_db(row)
    new_student = self.new(id = row[0], name = row[1], grade = row[2])
-   binding.pry
+  # binding.pry
    new_student
 end
 
