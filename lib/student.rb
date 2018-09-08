@@ -61,7 +61,12 @@ def update
  end
 
 def self.new_from_db(row)
-  sql = 
+   new = self.new  # self.new is the same as running Song.new
+ new.id = row[0]
+ new.name =  row[1]
+ new.grade = row[2]
+ new
+
 end
 
 
