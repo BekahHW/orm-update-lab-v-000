@@ -65,6 +65,7 @@ def self.new_from_db(row)
    new.id = row[0]
    new.name =  row[1]
    new.grade = row[2]
+   binding.pry
  new
 
 end
