@@ -61,8 +61,8 @@ def update
     Student.new(result[0], result[1], result[2])
  end
 
-def self.new_from_db(row)
-   new = self.new(row)
+def self.new_from_db(grade, name)
+   new = self.new(grade, name)
    new.id = row[0]
    new.name =  row[1]
    new.grade = row[2]
