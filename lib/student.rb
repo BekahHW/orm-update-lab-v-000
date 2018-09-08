@@ -63,10 +63,10 @@ def update
 
 def self.new_from_db(grade, name)
    new = self.new(grade, name)
-   new.id = row[0]
-   new.name =  row[1]
-   new.grade = row[2]
-   binding.pry
+  # new.id = row[0]
+  # new.name =  row[1]
+  # new.grade = row[2]
+  # binding.pry
     new
 
 end
