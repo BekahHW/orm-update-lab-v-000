@@ -62,12 +62,11 @@ def update
  end
 
 def self.new_from_db(row)
-   new = self.new(id, name, grade)
-  new.id = row[0]
-  new.name =  row[1]
-  new.grade = row[2]
-  # binding.pry
-    new.save
+  self.new.tap do |s|	
+      s.id = row[0]	
+      s.name =  row[1]	
+      s.grade = row[2]	
+    end
     
 
 end
